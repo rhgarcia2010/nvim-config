@@ -11,7 +11,26 @@ call plug#begin("~/.config/nvim/autoload/plugged")
 Plug 'sheerun/vim-polyglot'
 
 "File explorer
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
+
+"COC Code Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+"Fuzzy finder
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf.vim'
+
+"Color scheme
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+"Key mappings help
+"Plug 'liuchengxu/vim-which-key'
+
+"Commenter
+Plug 'preservim/nerdcommenter'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
